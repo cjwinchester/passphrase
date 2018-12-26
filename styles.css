@@ -1,0 +1,41 @@
+body {
+  font-family: consolas, menlo, monaco, monospace;
+  margin: 0;
+  padding: 3rem;
+}
+
+div.passphrase {
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  background-color: white;
+  font-family: consolas, menlo, monaco, monospace;
+  color: black;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+div#results {
+  margin-top: 1.7rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+p {
+  font-size: 0.7rem;
+  margin-top: 5rem;
+}
