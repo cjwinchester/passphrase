@@ -2,6 +2,7 @@ body {
   font-family: consolas, menlo, monaco, monospace;
   margin: 0;
   padding: 3rem;
+  background-color: #FEFCF9;
 }
 
 div.passphrase {
@@ -13,9 +14,9 @@ div#content {
 }
 
 button {
-  border: 1px solid black;
+  border: 1px solid #010306;
   border-radius: 0.25rem;
-  background-color: white;
+  background-color: #FEFCF9;
   font-family: consolas, menlo, monaco, monospace;
   color: black;
   font-size: 1.7rem;
@@ -31,8 +32,8 @@ div#results {
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  background-color: #010306;
+  color: #FEFCF9;
 }
 
 button:focus {
