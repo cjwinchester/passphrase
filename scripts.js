@@ -1,4 +1,6 @@
 var button = document.getElementsByTagName('button')[0];
+var loading = document.getElementById('loading');
+var content = document.getElementById('content');
 var results = document.getElementById('results');
 
 function dice_roll() {
@@ -24,6 +26,9 @@ xhr.onload = function (e) {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
       var data = JSON.parse(xhr.responseText);
+      loading.style.display = 'none';
+      content.style.display = 'block';
+      
       button.addEventListener('click', function() {
         var words = [];
         for (var i=0; i<5; i++) {
@@ -35,6 +40,7 @@ xhr.onload = function (e) {
         window.getSelection().selectAllChildren(results);
         document.execCommand('copy');
       });
+
     } else {
       console.error(xhr.statusText);
     }
