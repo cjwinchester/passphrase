@@ -21,7 +21,6 @@ button {
   color: black;
   font-size: 1.7rem;
   line-height: 1.2;
-  white-space: nowrap;
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
